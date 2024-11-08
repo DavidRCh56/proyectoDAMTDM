@@ -83,20 +83,18 @@
 
             <!-- Icono de edición (lapiz) -->
             <ImageView
-                android:id="@+id/ivEditRecipe"
+                android:id="@+id/ivEditarReceta"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_marginBottom="8dp"
-                android:contentDescription="Editar receta"
                 android:src="@drawable/lapiz"
                 android:scaleType="centerCrop" />
 
             <!-- Icono de eliminación (borrar) -->
             <ImageView
-                android:id="@+id/ivDeleteRecipe"
+                android:id="@+id/ivBorrarReceta"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:contentDescription="Borrar receta"
                 android:src="@drawable/borrar"
                 android:scaleType="centerCrop" />
 
