@@ -3,9 +3,11 @@ local
 color black
 color white
 dimen fab_margin
+drawable borrar
 drawable entrecot_de_ternera
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable lapiz
 id FirstFragment
 id SecondFragment
 id Validar
@@ -13,6 +15,8 @@ id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
 id etContrasenna
 id etUsuario
+id ivDeleteRecipe
+id ivEditRecipe
 id ivLogo
 id ivRecipeImage
 id nav_graph

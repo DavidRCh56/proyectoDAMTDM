@@ -21,6 +21,12 @@ public final class ItemRecetaBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
+  public final ImageView ivDeleteRecipe;
+
+  @NonNull
+  public final ImageView ivEditRecipe;
+
+  @NonNull
   public final ImageView ivRecipeImage;
 
   @NonNull
@@ -35,10 +41,13 @@ public final class ItemRecetaBinding implements ViewBinding {
   @NonNull
   public final TextView tvRecipeName;
 
-  private ItemRecetaBinding(@NonNull CardView rootView, @NonNull ImageView ivRecipeImage,
+  private ItemRecetaBinding(@NonNull CardView rootView, @NonNull ImageView ivDeleteRecipe,
+      @NonNull ImageView ivEditRecipe, @NonNull ImageView ivRecipeImage,
       @NonNull TextView tvRecipeCalories, @NonNull TextView tvRecipeDescription,
       @NonNull TextView tvRecipeIngredients, @NonNull TextView tvRecipeName) {
     this.rootView = rootView;
+    this.ivDeleteRecipe = ivDeleteRecipe;
+    this.ivEditRecipe = ivEditRecipe;
     this.ivRecipeImage = ivRecipeImage;
     this.tvRecipeCalories = tvRecipeCalories;
     this.tvRecipeDescription = tvRecipeDescription;
@@ -73,6 +82,18 @@ public final class ItemRecetaBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.ivDeleteRecipe;
+      ImageView ivDeleteRecipe = ViewBindings.findChildViewById(rootView, id);
+      if (ivDeleteRecipe == null) {
+        break missingId;
+      }
+
+      id = R.id.ivEditRecipe;
+      ImageView ivEditRecipe = ViewBindings.findChildViewById(rootView, id);
+      if (ivEditRecipe == null) {
+        break missingId;
+      }
+
       id = R.id.ivRecipeImage;
       ImageView ivRecipeImage = ViewBindings.findChildViewById(rootView, id);
       if (ivRecipeImage == null) {
@@ -103,8 +124,8 @@ public final class ItemRecetaBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemRecetaBinding((CardView) rootView, ivRecipeImage, tvRecipeCalories,
-          tvRecipeDescription, tvRecipeIngredients, tvRecipeName);
+      return new ItemRecetaBinding((CardView) rootView, ivDeleteRecipe, ivEditRecipe, ivRecipeImage,
+          tvRecipeCalories, tvRecipeDescription, tvRecipeIngredients, tvRecipeName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

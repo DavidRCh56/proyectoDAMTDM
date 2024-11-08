@@ -3033,6 +3033,7 @@ int drawable abc_textfield_search_material 0x7f070076
 int drawable abc_vector_test 0x7f070077
 int drawable avd_hide_password 0x7f070078
 int drawable avd_show_password 0x7f070079
+int drawable borrar 0x7f0700e8
 int drawable btn_checkbox_checked_mtrl 0x7f07007a
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f07007b
 int drawable btn_checkbox_unchecked_mtrl 0x7f07007c
@@ -3068,6 +3069,7 @@ int drawable ic_mtrl_chip_checked_circle 0x7f070099
 int drawable ic_mtrl_chip_close_circle 0x7f07009a
 int drawable ic_search_black_24 0x7f07009b
 int drawable indeterminate_static 0x7f07009c
+int drawable lapiz 0x7f0700e9
 int drawable m3_avd_hide_password 0x7f07009d
 int drawable m3_avd_show_password 0x7f07009e
 int drawable m3_bottom_sheet_drag_handle 0x7f07009f
@@ -3380,6 +3382,8 @@ int id invisible 0x7f0800ea
 int id inward 0x7f0800eb
 int id italic 0x7f0800ec
 int id item_touch_helper_previous_elevation 0x7f0800ed
+int id ivDeleteRecipe 0x7f08020c
+int id ivEditRecipe 0x7f08020d
 int id ivLogo 0x7f0800ee
 int id ivRecipeImage 0x7f0800ef
 int id jumpToEnd 0x7f0800f0
