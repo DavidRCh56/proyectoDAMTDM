@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     // Adaptador para el RecyclerView
-    inner class RecipeAdapter(private val recipes: List<Map<String, Any>>) :
+    class RecipeAdapter(private val recipes: List<Map<String, Any>>) :
         RecyclerView.Adapter<RecipeAdapter.RecipeViewHolder>() {
 
         // Infla el layout de cada item del RecyclerView
