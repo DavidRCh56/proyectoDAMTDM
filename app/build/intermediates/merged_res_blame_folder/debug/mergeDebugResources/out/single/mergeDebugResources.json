@@ -1,9 +1,5 @@
 [
     {
-        "merged": "com.iesvdc.multimedia.proyectodamtdm.app-debug-47:/drawable_boton_login.xml.flat",
-        "source": "com.iesvdc.multimedia.proyectodamtdm.app-main-49:/drawable/boton_login.xml"
-    },
-    {
         "merged": "C:\\Users\\davri\\.gradle\\daemon\\8.7\\com.iesvdc.multimedia.proyectodamtdm.app-debug-47:\\layout_activity_login.xml.flat",
         "source": "C:\\Users\\davri\\.gradle\\daemon\\8.7\\com.iesvdc.multimedia.proyectodamtdm.app-main-49:\\layout\\activity_login.xml"
     },
@@ -90,10 +86,6 @@
     {
         "merged": "C:\\Users\\davri\\.gradle\\daemon\\8.7\\com.iesvdc.multimedia.proyectodamtdm.app-debug-47:\\layout_item_receta.xml.flat",
         "source": "C:\\Users\\davri\\.gradle\\daemon\\8.7\\com.iesvdc.multimedia.proyectodamtdm.app-main-49:\\layout\\item_receta.xml"
-    },
-    {
-        "merged": "com.iesvdc.multimedia.proyectodamtdm.app-debug-47:/layout_activity_main.xml.flat",
-        "source": "com.iesvdc.multimedia.proyectodamtdm.app-main-49:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\davri\\.gradle\\daemon\\8.7\\com.iesvdc.multimedia.proyectodamtdm.app-debug-47:\\mipmap-hdpi_ic_launcher_round.webp.flat",
