@@ -10,39 +10,54 @@ import com.iesvdc.multimedia.proyectodamtdm.R
 import com.iesvdc.multimedia.proyectodamtdm.model.Receta
 
 class RecetaAdapter(
-    private val recipes: List<Receta>, // Lista de recetas
-    private val onDelete: (Receta) -> Unit, // Acción para eliminar
-    private val onEdit: (Receta) -> Unit   // Acción para editar
-) : RecyclerView.Adapter<RecetaAdapter.RecipeViewHolder>() {
+    private val recipes: MutableList<Receta>,
+    private val onDelete: (Receta) -> Unit,
+    private val onEdit: (Receta) -> Unit
+) : RecyclerView.Adapter<RecetaAdapter.RecetaViewHolder>() {
 
-    // Clase interna para el ViewHolder
-    class RecipeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val recipeImage: ImageView = itemView.findViewById(R.id.ivRecipeImage)
-        val recipeName: TextView = itemView.findViewById(R.id.tvRecipeName)
-        val recipeDescription: TextView = itemView.findViewById(R.id.tvRecipeDescription)
-        val recipeIngredients: TextView = itemView.findViewById(R.id.tvRecipeIngredients)
-        val recipeCalories: TextView = itemView.findViewById(R.id.tvRecipeCalories)
-        val editButton: ImageView = itemView.findViewById(R.id.ivEditarReceta)
-        val deleteButton: ImageView = itemView.findViewById(R.id.ivBorrarReceta)
+    inner class RecetaViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val recipeName: TextView = view.findViewById(R.id.tvRecipeName)
+        val recipeDescription: TextView = view.findViewById(R.id.tvRecipeDescription)
+        val recipeImage: ImageView = view.findViewById(R.id.ivRecipeImage)
+        val deleteIcon: ImageView = view.findViewById(R.id.ivBorrarReceta) // Icono de borrar
+        val editIcon: ImageView = view.findViewById(R.id.ivEditarReceta) // Icono de editar
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecipeViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_receta, parent, false)
-        return RecipeViewHolder(view)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecetaViewHolder {
+        val view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.item_receta, parent, false)
+        return RecetaViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: RecipeViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: RecetaViewHolder, position: Int) {
         val recipe = recipes[position]
-        holder.recipeImage.setImageResource(recipe.image)
         holder.recipeName.text = recipe.name
         holder.recipeDescription.text = recipe.description
-        holder.recipeIngredients.text = recipe.ingredients
-        holder.recipeCalories.text = recipe.calories
+        holder.recipeImage.setImageResource(recipe.image)
 
-        // Asignar eventos a los botones
-        holder.editButton.setOnClickListener { onEdit(recipe) }
-        holder.deleteButton.setOnClickListener { onDelete(recipe) }
+        // Configurar botón de borrar
+        holder.deleteIcon.setOnClickListener {
+            // Eliminar el ítem correctamente usando un identificador único (id)
+            deleteItem(recipe)
+        }
+
+        // Configurar botón de editar
+        holder.editIcon.setOnClickListener {
+            onEdit(recipe)
+        }
     }
 
     override fun getItemCount(): Int = recipes.size
+
+    // Método para eliminar un ítem correctamente usando un identificador único
+    private fun deleteItem(recipe: Receta) {
+        val indexToRemove = recipes.indexOf(recipe)
+        if (indexToRemove != -1) {
+            recipes.removeAt(indexToRemove) // Eliminamos el ítem
+            notifyItemRemoved(indexToRemove) // Notificamos al RecyclerView
+
+            // Llamamos a la función onDelete para cualquier acción adicional
+            onDelete(recipe)
+        }
+    }
 }
