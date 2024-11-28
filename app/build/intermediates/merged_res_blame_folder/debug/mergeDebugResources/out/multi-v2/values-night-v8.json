@@ -38,14 +38,14 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\davri\\AndroidStudioProjects\\proyectoDAMTDM\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\davri\\StudioProjects\\proyectoDAMTDM\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "100",
+                        "startOffsets": "102",
                         "endLines": "5",
                         "endColumns": "12",
-                        "endOffsets": "321"
+                        "endOffsets": "326"
                     },
                     "to": {
                         "startLines": "2",

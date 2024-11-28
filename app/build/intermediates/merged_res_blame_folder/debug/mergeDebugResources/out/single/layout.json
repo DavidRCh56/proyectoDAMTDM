@@ -1,18 +1,14 @@
 [
     {
-        "merged": "C:\\Users\\davri\\.gradle\\daemon\\8.7\\com.iesvdc.multimedia.proyectodamtdm.app-mergeDebugResources-46:\\layout\\activity_login.xml",
-        "source": "C:\\Users\\davri\\.gradle\\daemon\\8.7\\com.iesvdc.multimedia.proyectodamtdm.app-main-49:\\layout\\activity_login.xml"
-    },
-    {
-        "merged": "C:\\Users\\davri\\.gradle\\daemon\\8.7\\com.iesvdc.multimedia.proyectodamtdm.app-mergeDebugResources-46:\\layout\\item_receta.xml",
-        "source": "C:\\Users\\davri\\.gradle\\daemon\\8.7\\com.iesvdc.multimedia.proyectodamtdm.app-main-49:\\layout\\item_receta.xml"
+        "merged": "com.iesvdc.multimedia.proyectodamtdm.app-mergeDebugResources-46:/layout/activity_main.xml",
+        "source": "com.iesvdc.multimedia.proyectodamtdm.app-main-49:/layout/activity_main.xml"
     },
     {
         "merged": "com.iesvdc.multimedia.proyectodamtdm.app-mergeDebugResources-46:/layout/activity_login.xml",
         "source": "com.iesvdc.multimedia.proyectodamtdm.app-main-49:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\davri\\.gradle\\daemon\\8.7\\com.iesvdc.multimedia.proyectodamtdm.app-mergeDebugResources-46:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\davri\\.gradle\\daemon\\8.7\\com.iesvdc.multimedia.proyectodamtdm.app-main-49:\\layout\\activity_main.xml"
+        "merged": "com.iesvdc.multimedia.proyectodamtdm.app-mergeDebugResources-46:/layout/item_receta.xml",
+        "source": "com.iesvdc.multimedia.proyectodamtdm.app-main-49:/layout/item_receta.xml"
     }
 ]
