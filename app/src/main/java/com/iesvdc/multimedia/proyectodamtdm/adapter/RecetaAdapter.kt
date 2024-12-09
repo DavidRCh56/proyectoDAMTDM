@@ -18,9 +18,11 @@ class RecetaAdapter(
     inner class RecetaViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val recipeName: TextView = view.findViewById(R.id.tvRecipeName)
         val recipeDescription: TextView = view.findViewById(R.id.tvRecipeDescription)
+        val recipeIngredients: TextView = view.findViewById(R.id.tvRecipeIngredients)
+        val recipeCalories: TextView = view.findViewById(R.id.tvRecipeCalories)
         val recipeImage: ImageView = view.findViewById(R.id.ivRecipeImage)
-        val deleteIcon: ImageView = view.findViewById(R.id.ivBorrarReceta) // Icono de borrar
-        val editIcon: ImageView = view.findViewById(R.id.ivEditarReceta) // Icono de editar
+        val deleteIcon: ImageView = view.findViewById(R.id.ivBorrarReceta)
+        val editIcon: ImageView = view.findViewById(R.id.ivEditarReceta)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecetaViewHolder {
@@ -33,6 +35,8 @@ class RecetaAdapter(
         val recipe = recipes[position]
         holder.recipeName.text = recipe.name
         holder.recipeDescription.text = recipe.description
+        holder.recipeIngredients.text = "Ingredientes: ${recipe.ingredients}"
+        holder.recipeCalories.text = "Calorías: ${recipe.calories}"
         holder.recipeImage.setImageResource(recipe.image)
 
         // Configurar botón de borrar
