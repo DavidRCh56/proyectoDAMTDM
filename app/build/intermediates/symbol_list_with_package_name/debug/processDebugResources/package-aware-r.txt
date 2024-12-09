@@ -3252,6 +3252,8 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnCancel
+id btnSave
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3335,10 +3337,15 @@ id enterAlways
 id enterAlwaysCollapsed
 id escape
 id etContrasenna
+id etEditCalories
+id etEditDescription
+id etEditIngredients
+id etEditName
 id etUsuario
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fabAddRecipe
 id fade
 id fill
 id fill_horizontal
@@ -3805,6 +3812,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_edit_recipe
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_receta

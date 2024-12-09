@@ -1,4 +1,4 @@
-#Thu Nov 28 19:18:07 CET 2024
+#Mon Dec 09 22:20:31 CET 2024
 base.0=C\:\\Users\\davri\\StudioProjects\\proyectoDAMTDM\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\davri\\StudioProjects\\proyectoDAMTDM\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\davri\\StudioProjects\\proyectoDAMTDM\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex

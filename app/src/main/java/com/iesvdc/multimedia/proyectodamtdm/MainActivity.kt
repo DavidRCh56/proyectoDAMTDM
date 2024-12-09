@@ -5,6 +5,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.iesvdc.multimedia.proyectodamtdm.adapter.RecetaAdapter
 import com.iesvdc.multimedia.proyectodamtdm.model.Receta
 
@@ -21,20 +22,33 @@ class MainActivity : AppCompatActivity() {
         initializeRecipes()
 
         // Configurar RecyclerView
+        setupRecyclerView()
+
+        // Configurar botón flotante para añadir recetas
+        setupAddRecipeButton()
+    }
+
+    // Configuración del RecyclerView
+    private fun setupRecyclerView() {
         val recyclerView = findViewById<RecyclerView>(R.id.rvRecipes)
         recetaAdapter = RecetaAdapter(
             recipes,
-            onDelete = { recipe ->
-                Toast.makeText(this, "${recipe.name} ha sido eliminado", Toast.LENGTH_SHORT).show()
-            },
-            onEdit = { recipe ->
-                showEditDialog(recipe)
-            }
+            onDelete = { recipe -> deleteRecipe(recipe) },
+            onEdit = { recipe -> showEditDialog(recipe) }
         )
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = recetaAdapter
     }
 
+    // Configuración del botón flotante para añadir recetas
+    private fun setupAddRecipeButton() {
+        val fabAddRecipe = findViewById<FloatingActionButton>(R.id.fabAddRecipe)
+        fabAddRecipe.setOnClickListener {
+            showAddRecipeDialog()
+        }
+    }
+
+    // Inicializar lista con recetas predeterminadas
     private fun initializeRecipes() {
         recipes.addAll(
             listOf(
@@ -146,6 +160,7 @@ class MainActivity : AppCompatActivity() {
         )
     }
 
+    // Método para mostrar el diálogo de edición
     private fun showEditDialog(recipe: Receta) {
         val dialog = EditRecipeDialogFragment(recipe) { updatedRecipe ->
             val index = recipes.indexOfFirst { it.id == updatedRecipe.id }
@@ -156,5 +171,25 @@ class MainActivity : AppCompatActivity() {
             }
         }
         dialog.show(supportFragmentManager, "EditRecipeDialog")
+    }
+
+    // Método para mostrar el diálogo para añadir una receta
+    private fun showAddRecipeDialog() {
+        val dialog = EditRecipeDialogFragment(null) { newRecipe ->
+            recipes.add(newRecipe)
+            recetaAdapter.notifyItemInserted(recipes.size - 1)
+            Toast.makeText(this, "Receta añadida", Toast.LENGTH_SHORT).show()
+        }
+        dialog.show(supportFragmentManager, "AddRecipeDialog")
+    }
+
+    // Método para eliminar una receta
+    private fun deleteRecipe(recipe: Receta) {
+        val index = recipes.indexOf(recipe)
+        if (index != -1) {
+            recipes.removeAt(index)
+            recetaAdapter.notifyItemRemoved(index)
+            Toast.makeText(this, "${recipe.name} ha sido eliminada", Toast.LENGTH_SHORT).show()
+        }
     }
 }
