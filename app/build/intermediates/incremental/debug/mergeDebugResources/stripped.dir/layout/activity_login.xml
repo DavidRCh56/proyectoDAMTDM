@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#2d2d2d">
+
+    <!-- Campo de texto para el nombre de usuario-->
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario"
+        android:textColorHint="#1F1F1F"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/casilla_texto_login"
+        android:layout_marginBottom="16dp"
+        android:drawablePadding="10dp"
+        android:textColor="@color/black"/>
+
+    <!-- Campo de texto para la contraseña-->
+    <EditText
+        android:id="@+id/etContrasenna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:textColorHint="#1F1F1F"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/casilla_texto_login"
+        android:layout_marginBottom="24dp"
+        android:drawablePadding="10dp"
+        android:textColor="@color/black"/>
+
+    <!-- Botón de validación (Iniciar sesión)-->
+    <Button
+        android:id="@+id/Validar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión"
+        android:background="@drawable/boton_login"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+
+</LinearLayout>
