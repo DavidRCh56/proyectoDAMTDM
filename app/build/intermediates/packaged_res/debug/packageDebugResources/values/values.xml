@@ -6,6 +6,11 @@
     <string name="action_settings">Settings</string>
     <string name="app_name">proyectoDAMTDM</string>
     <string name="first_fragment_label">First Fragment</string>
+    <string name="gcm_defaultSenderId" translatable="false">923730263507</string>
+    <string name="google_api_key" translatable="false">AIzaSyAK4Sg5q1HLsLx2iAhdebRPmhKF96t5GUM</string>
+    <string name="google_app_id" translatable="false">1:923730263507:android:c30d33a0fadf316be18326</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAK4Sg5q1HLsLx2iAhdebRPmhKF96t5GUM</string>
+    <string name="google_storage_bucket" translatable="false">proyectodamtdm.firebasestorage.app</string>
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
@@ -44,6 +49,7 @@
     </string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="project_id" translatable="false">proyectodamtdm</string>
     <string name="second_fragment_label">Second Fragment</string>
     <style name="Base.Theme.ProyectoDAMTDM" parent="Theme.Material3.DayNight.NoActionBar">
         

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "923730263507",
+    "project_id": "proyectodamtdm",
+    "storage_bucket": "proyectodamtdm.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923730263507:android:c30d33a0fadf316be18326",
+        "android_client_info": {
+          "package_name": "com.iesvdc.multimedia.proyectodamtdm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK4Sg5q1HLsLx2iAhdebRPmhKF96t5GUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

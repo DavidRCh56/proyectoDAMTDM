@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.iesvdc.multimedia.proyectodamtdm.app-mergeDebugResources-45:/values-v22/values-v22.xml",
+            "outputFile": "com.iesvdc.multimedia.proyectodamtdm.app-mergeDebugResources-57:/values-v22/values-v22.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\davri\\.gradle\\caches\\transforms-4\\3561d1ffeb4a54dc7870f082948658e6\\transformed\\appcompat-1.7.0\\res\\values-v22\\values-v22.xml",
+                    "source": "C:\\Users\\davri\\.gradle\\caches\\transforms-4\\9597e699c9d06624ffce18cec2f73a0a\\transformed\\appcompat-1.7.0\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",
