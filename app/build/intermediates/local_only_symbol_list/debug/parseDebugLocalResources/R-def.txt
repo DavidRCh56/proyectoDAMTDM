@@ -16,6 +16,7 @@ id Validar
 id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
 id btnCancel
+id btnLogout
 id btnSave
 id btn_last_register
 id btn_register_in_register

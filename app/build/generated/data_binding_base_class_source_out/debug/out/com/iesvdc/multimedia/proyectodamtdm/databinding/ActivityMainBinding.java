@@ -4,6 +4,7 @@ package com.iesvdc.multimedia.proyectodamtdm.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,14 +22,18 @@ public final class ActivityMainBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final Button btnLogout;
+
+  @NonNull
   public final FloatingActionButton fabAddRecipe;
 
   @NonNull
   public final RecyclerView rvRecipes;
 
-  private ActivityMainBinding(@NonNull RelativeLayout rootView,
+  private ActivityMainBinding(@NonNull RelativeLayout rootView, @NonNull Button btnLogout,
       @NonNull FloatingActionButton fabAddRecipe, @NonNull RecyclerView rvRecipes) {
     this.rootView = rootView;
+    this.btnLogout = btnLogout;
     this.fabAddRecipe = fabAddRecipe;
     this.rvRecipes = rvRecipes;
   }
@@ -60,6 +65,12 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnLogout;
+      Button btnLogout = ViewBindings.findChildViewById(rootView, id);
+      if (btnLogout == null) {
+        break missingId;
+      }
+
       id = R.id.fabAddRecipe;
       FloatingActionButton fabAddRecipe = ViewBindings.findChildViewById(rootView, id);
       if (fabAddRecipe == null) {
@@ -72,7 +83,7 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((RelativeLayout) rootView, fabAddRecipe, rvRecipes);
+      return new ActivityMainBinding((RelativeLayout) rootView, btnLogout, fabAddRecipe, rvRecipes);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

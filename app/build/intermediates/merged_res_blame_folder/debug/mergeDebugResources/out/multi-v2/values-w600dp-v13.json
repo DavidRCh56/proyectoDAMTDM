@@ -4,7 +4,7 @@
             "outputFile": "com.iesvdc.multimedia.proyectodamtdm.app-mergeDebugResources-57:/values-w600dp-v13/values-w600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\manana\\AndroidStudioProjects\\proyectoDAMTDM\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
+                    "source": "C:\\Users\\davri\\StudioProjects\\proyectoDAMTDM\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",

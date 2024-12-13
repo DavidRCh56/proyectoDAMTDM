@@ -3307,6 +3307,7 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btnCancel
+id btnLogout
 id btnSave
 id btn_last_register
 id btn_register_in_register
