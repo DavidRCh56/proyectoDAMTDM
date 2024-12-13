@@ -4,26 +4,7 @@
             "outputFile": "com.iesvdc.multimedia.proyectodamtdm.app-mergeDebugResources-57:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\davri\\StudioProjects\\proyectoDAMTDM\\app\\src\\main\\res\\values-v23\\themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "66",
-                        "endLines": "7",
-                        "endColumns": "12",
-                        "endOffsets": "449"
-                    },
-                    "to": {
-                        "startLines": "53",
-                        "startColumns": "4",
-                        "startOffsets": "3382",
-                        "endLines": "58",
-                        "endColumns": "12",
-                        "endOffsets": "3710"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\davri\\.gradle\\caches\\transforms-4\\9e1a15118df95c511b90ac7dc9bc62ba\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\manana\\.gradle\\caches\\transforms-4\\9173ff1b123612c16b792afe3945de29\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -42,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\davri\\.gradle\\caches\\transforms-4\\9597e699c9d06624ffce18cec2f73a0a\\transformed\\appcompat-1.7.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\manana\\.gradle\\caches\\transforms-4\\c424c833cdeed22edf101d7cb6939ffb\\transformed\\appcompat-1.7.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -53,7 +34,26 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\davri\\.gradle\\caches\\transforms-4\\9eb8cabf7656cdcd6d0972c21af39fb2\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\manana\\AndroidStudioProjects\\proyectoDAMTDM\\app\\src\\main\\res\\values-v23\\themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "66",
+                        "endLines": "7",
+                        "endColumns": "12",
+                        "endOffsets": "449"
+                    },
+                    "to": {
+                        "startLines": "53",
+                        "startColumns": "4",
+                        "startOffsets": "3382",
+                        "endLines": "58",
+                        "endColumns": "12",
+                        "endOffsets": "3710"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\manana\\.gradle\\caches\\transforms-4\\abe286ff1bf2f5caa35d7011b9484017\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,9,13,16,19,22,25,28,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",

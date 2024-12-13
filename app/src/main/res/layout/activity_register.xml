@@ -5,80 +5,106 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="#2d2d2d">
 
-
-
-
+    <!-- Título centrado -->
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:layout_marginTop="32dp"
         android:text="Registrarse"
         android:textSize="34sp"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Campo de Email -->
+
+    <!-- Campo de Contraseña -->
+
+    <!-- Campo para repetir contraseña -->
+
+    <!-- Botón de Registrarse -->
+    <EditText
+        android:id="@+id/pass_register_repeat_in_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/casilla_texto_login"
+        android:drawablePadding="10dp"
+        android:hint="Repetir contraseña:"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="#1F1F1F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_pass_register" />
+
     <EditText
         android:id="@+id/edit_user_register"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/casilla_texto_login"
+        android:drawablePadding="10dp"
         android:hint="Email:"
-        android:inputType="textEmailAddress"
-        android:textSize="28sp"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="#1F1F1F"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
         android:id="@+id/edit_pass_register"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:ems="10"
-        android:hint="Password:"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/casilla_texto_login"
+        android:drawablePadding="10dp"
+        android:hint="Contraseña:"
         android:inputType="textPassword"
-        android:textSize="28sp"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="#1F1F1F"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_user_register" />
 
-
-    <EditText
-        android:id="@+id/pass_register_repeat_in_register"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btn_last_register"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="Repetir Password:"
-        android:inputType="textPassword"
-        android:textSize="28sp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/boton_login"
+        android:text="Cuenta Ya Creada"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_pass_register" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_register_in_register" />
 
     <Button
         android:id="@+id/btn_register_in_register"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/boton_login"
         android:text="Registrarse"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pass_register_repeat_in_register" />
 
-    <Button
-        android:id="@+id/btn_last_register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Cuenta Ya Creada"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_register_in_register" />
+    <!-- Botón para cuentas existentes -->
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
             "outputFile": "com.iesvdc.multimedia.proyectodamtdm.app-mergeDebugResources-57:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\davri\\.gradle\\caches\\transforms-4\\9597e699c9d06624ffce18cec2f73a0a\\transformed\\appcompat-1.7.0\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\manana\\.gradle\\caches\\transforms-4\\c424c833cdeed22edf101d7cb6939ffb\\transformed\\appcompat-1.7.0\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\davri\\StudioProjects\\proyectoDAMTDM\\app\\src\\main\\res\\values-land\\dimens.xml",
+                    "source": "C:\\Users\\manana\\AndroidStudioProjects\\proyectoDAMTDM\\app\\src\\main\\res\\values-land\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
@@ -31,7 +31,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\davri\\.gradle\\caches\\transforms-4\\9eb8cabf7656cdcd6d0972c21af39fb2\\transformed\\material-1.12.0\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\manana\\.gradle\\caches\\transforms-4\\abe286ff1bf2f5caa35d7011b9484017\\transformed\\material-1.12.0\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,26,35,40",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

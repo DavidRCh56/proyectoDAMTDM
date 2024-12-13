@@ -19,6 +19,7 @@ id btnCancel
 id btnSave
 id btn_last_register
 id btn_register_in_register
+id cambioContrasennabtn
 id edit_pass_register
 id edit_user_register
 id etContrasenna
@@ -26,7 +27,7 @@ id etEditCalories
 id etEditDescription
 id etEditIngredients
 id etEditName
-id etUsuario
+id etEmail
 id fabAddRecipe
 id ivBorrarReceta
 id ivEditarReceta
@@ -34,6 +35,7 @@ id ivRecipeImage
 id main
 id nav_graph
 id pass_register_repeat_in_register
+id registerbtn
 id rvRecipes
 id textView4
 id tvRecipeCalories

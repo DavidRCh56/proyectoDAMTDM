@@ -3313,6 +3313,7 @@ id btn_register_in_register
 id buttonPanel
 id cache_measures
 id callMeasure
+id cambioContrasennabtn
 id cancel_button
 id carryVelocity
 id center
@@ -3400,7 +3401,7 @@ id etEditCalories
 id etEditDescription
 id etEditIngredients
 id etEditName
-id etUsuario
+id etEmail
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3593,6 +3594,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id registerbtn
 id report_drawn
 id reverseSawtooth
 id right

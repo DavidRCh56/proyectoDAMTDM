@@ -24,17 +24,26 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final Button Validar;
 
   @NonNull
+  public final Button cambioContrasennabtn;
+
+  @NonNull
   public final EditText etContrasenna;
 
   @NonNull
-  public final EditText etUsuario;
+  public final EditText etEmail;
+
+  @NonNull
+  public final Button registerbtn;
 
   private ActivityLoginBinding(@NonNull LinearLayout rootView, @NonNull Button Validar,
-      @NonNull EditText etContrasenna, @NonNull EditText etUsuario) {
+      @NonNull Button cambioContrasennabtn, @NonNull EditText etContrasenna,
+      @NonNull EditText etEmail, @NonNull Button registerbtn) {
     this.rootView = rootView;
     this.Validar = Validar;
+    this.cambioContrasennabtn = cambioContrasennabtn;
     this.etContrasenna = etContrasenna;
-    this.etUsuario = etUsuario;
+    this.etEmail = etEmail;
+    this.registerbtn = registerbtn;
   }
 
   @Override
@@ -70,19 +79,32 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.cambioContrasennabtn;
+      Button cambioContrasennabtn = ViewBindings.findChildViewById(rootView, id);
+      if (cambioContrasennabtn == null) {
+        break missingId;
+      }
+
       id = R.id.etContrasenna;
       EditText etContrasenna = ViewBindings.findChildViewById(rootView, id);
       if (etContrasenna == null) {
         break missingId;
       }
 
-      id = R.id.etUsuario;
-      EditText etUsuario = ViewBindings.findChildViewById(rootView, id);
-      if (etUsuario == null) {
+      id = R.id.etEmail;
+      EditText etEmail = ViewBindings.findChildViewById(rootView, id);
+      if (etEmail == null) {
         break missingId;
       }
 
-      return new ActivityLoginBinding((LinearLayout) rootView, Validar, etContrasenna, etUsuario);
+      id = R.id.registerbtn;
+      Button registerbtn = ViewBindings.findChildViewById(rootView, id);
+      if (registerbtn == null) {
+        break missingId;
+      }
+
+      return new ActivityLoginBinding((LinearLayout) rootView, Validar, cambioContrasennabtn,
+          etContrasenna, etEmail, registerbtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

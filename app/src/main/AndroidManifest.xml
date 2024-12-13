@@ -32,5 +32,4 @@
             android:exported="true"
             android:theme="@style/Theme.ProyectoDAMTDM" />
     </application>
-
 </manifest>
