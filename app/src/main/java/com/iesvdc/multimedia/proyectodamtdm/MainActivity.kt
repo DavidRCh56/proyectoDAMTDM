@@ -1,11 +1,14 @@
 package com.iesvdc.multimedia.proyectodamtdm
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.firebase.auth.FirebaseAuth
 import com.iesvdc.multimedia.proyectodamtdm.adapter.RecetaAdapter
 import com.iesvdc.multimedia.proyectodamtdm.model.Receta
 
@@ -26,6 +29,9 @@ class MainActivity : AppCompatActivity() {
 
         // Configurar botón flotante para añadir recetas
         setupAddRecipeButton()
+
+        // Configurar botón de cerrar sesión
+        setupLogoutButton()
     }
 
     // Configuración del RecyclerView
@@ -45,6 +51,20 @@ class MainActivity : AppCompatActivity() {
         val fabAddRecipe = findViewById<FloatingActionButton>(R.id.fabAddRecipe)
         fabAddRecipe.setOnClickListener {
             showAddRecipeDialog()
+        }
+    }
+
+    private fun setupLogoutButton() {
+        val btnLogout = findViewById<Button>(R.id.btnLogout)
+        btnLogout.setOnClickListener {
+            FirebaseAuth.getInstance().signOut() // Cerrar sesión de Firebase
+            Toast.makeText(this, "Sesión cerrada", Toast.LENGTH_SHORT).show()
+
+            // Redirigir al inicio de sesión
+            val intent = Intent(this, LoginActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
+            finish() // Finalizar MainActivity
         }
     }
 

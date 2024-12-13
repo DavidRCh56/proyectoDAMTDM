@@ -19,6 +19,19 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var btnRegister: Button
     private lateinit var btnRecoverPass: Button
 
+    override fun onStart() {
+        super.onStart()
+        // Verificar si el usuario ya está autenticado
+        val user = auth.currentUser
+        if (user != null && user.isEmailVerified) {
+            // Si el usuario está logueado y su email está verificado, saltar a MainActivity
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+    }
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)

@@ -28,6 +28,18 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var editRepeatPassword : EditText
     private lateinit var auth : FirebaseAuth
 
+    override fun onStart() {
+        super.onStart()
+        // Verificar si el usuario ya está autenticado
+        val user = auth.currentUser
+        if (user != null && user.isEmailVerified) {
+            // Si el usuario está logueado y su email está verificado, saltar a MainActivity
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
